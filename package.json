@@ -30,7 +30,8 @@
     "joi": "~6.10",
     "mongodb": "~2.1",
     "pa11y": "^4.5.0",
-    "underscore": "~1.8"
+    "underscore": "~1.8",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
@@ -42,6 +43,9 @@
   "main": "./app.js",
   "scripts": {
     "start": "node index.js",
-    "test": "make ci"
-  }
+    "test": "make ci",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
