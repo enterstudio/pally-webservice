@@ -30,7 +30,7 @@
     "joi": "~6.10",
     "mongodb": "~2.1",
     "pa11y": "^4.5.0",
-    "underscore": "~1.8"
+    "underscore": "~1.12.1"
   },
   "devDependencies": {
     "eslint": "^3.18.0",
